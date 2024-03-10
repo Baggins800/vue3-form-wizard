@@ -55,7 +55,7 @@
             v-else
             :class="tab.icon ? tab.icon : ''"
             class="wizard-icon"
-            :style="checked ? iconActiveStyle : ''"
+            :style="tab.checked ? iconActiveStyle : ''"
           >
             {{ tab.icon ? null : index + 1 }}
           </i>
