@@ -55,7 +55,7 @@
             v-else
             :class="tab.icon ? tab.icon : ''"
             class="wizard-icon"
-            :style="tab.checked ? iconActiveStyle : ''"
+            :style="checked ? iconActiveStyle : ''"
           >
             {{ tab.icon ? null : index + 1 }}
           </i>
@@ -111,6 +111,7 @@ export default {
     stepCheckedStyle() {
       return {
         borderColor: this.tab.color,
+        backgroundColor: this.tab.color,
       };
     },
     errorStyle() {
